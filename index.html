@@ -364,6 +364,7 @@ let switched = false;
 function switchToWaving() {
   if (switched || introComplete) return;
   switched = true;
+  overlay.style.background = '#f0f0f0';
   wormhole.classList.add('hidden');
   waving.classList.remove('hidden');
   waving.play().catch(() => {});
